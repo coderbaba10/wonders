@@ -1,0 +1,169 @@
+/* Umumiy stil */
+body {
+    margin: 5px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: black;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+}
+.container{
+    margin: 5px;
+    background-color: #333(247, 193, 94);
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #222222;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.dark-mode {
+    background-color: black; /* Qorong'ilik rejimi */
+    color: white; /* Qorong'ilik rejimi */
+}
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode header {
+    background: #1e1e1e;
+}
+button {
+    padding: 5%;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent; /* Tugma rangi */
+    color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .links ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar .links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.navbar .links ul li a:hover {
+    color: #ffcc00; /* Hover holatidagi rang */
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Hover holatidagi soya */
+} 
+.navbar .links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px; /* Maksimal kenglik */
+    margin: 20px auto;
+    background: transparent;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Boshlang'ich holat: ko'rinmaydi */
+    transform: translateY(20px); /* Boshlang'ich holat: pastdan ko'tarilgan */
+    animation: fadeInUp 0.6s forwards; /* Animatsiya qo'shish */
+    animation-delay: 0.2s; /* Animatsiya kechikishi */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Ko'rinadigan holat */
+        transform: translateY(0); /* Yuqoriga ko'tarilgan holat */
+    }
+}
+
+.container h1 {
+    text-align: center;
+    color: #656262;
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 100%; /* Rasm kengligini avtomatik belgilash */
+    height: auto; /* Rasm balandligini avtomatik belgilash */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #212121;
+    color: rgb(193, 187, 187);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Media so'rovlar */
+@media (max-width: 768px) {
+    .navbar .links ul li {
+        display: block; /* Mobil qurilmalarda linklarni ustun qilib qo'yish */
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 95%; /* Kichik ekranlarda kenglikni oshirish */
+    }
+
+    .container h1 {
+        font-size: 1.5em; /* Kichik ekranlarda sarlavhani kichraytirish */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px; /* Kichik ekranlarda ichki qismni kamaytirish */
+    }
+
+    footer {
+        font-size: 0.9em; /* Kichik ekranlarda footer matnini kichraytirish */
+    }
+}
