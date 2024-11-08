@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunyoning 7 Mo'jizasi</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <script>
+  function toggleMode() {
+    const body = document.body;
+    const icon = document.getElementById("mode-icon");
+    body.classList.toggle("dark-mode");
+    const mode = body.classList.contains("dark-mode") ? "Dark" : "Light";
+    localStorage.setItem("mode", mode);
+
+    // Iconni almashtirish
+    if (body.classList.contains("dark-mode")) {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    } else {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    }
+}
+
+window.onload = function() {
+    const savedMode = localStorage.getItem("mode");
+    const icon = document.getElementById("mode-icon");
+    if (savedMode === "Dark") {
+        document.body.classList.add("dark-mode");
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+}
+    </script>
+    <header>
+        <h1>BU qiziq</h1>
+        <button id="toggle-button" onclick="toggleMode()">
+            <i id="mode-icon" class="fas fa-sun"></i>
+        </button>
+    </header>
+    <main>
+        <div class="wonder" id="wonder1">
+            <h2>Buyuk Xitoy devori</h2>
+            <img src="https://th.bing.com/th/id/R.aeb2ddf264cc4c287c195602f015dc0c?rik=w2jVjWKWMbyVPg&pid=ImgRaw&r=0" alt="Buyuk Xitoy devori">
+            <div class="info">
+                <h3>Buyuk Xitoy devori</h3>
+                <p>Buyuk Xitoy devori 13,000 mildan ortiq cho'zilgan va Xitoyning tarixiy kuchini ramzi hisoblanadi. <a href="china.html"><mark>Hammasini Ko'rish</mark></a></p>
+            </div>
+        </div>
+        <div class="wonder" id="wonder2">
+            <h2>Petra</h2>
+            <img src="https://th.bing.com/th/id/R.84b97bae67a918b545f199605719ab02?rik=Wi7omLBRcAUoPA&riu=http%3a%2f%2fmedia.islamicity.org%2fwp-content%2fuploads%2f2017%2f03%2fAdobeStock_86996307.jpeg&ehk=Bp1BNI8A%2f%2f92x2w%2fx%2beljwLU4jHanWlKYnGGwDPDS9A%3d&risl=1&pid=ImgRaw&r=0" alt="Petra">
+            <div class="info">
+                <h3>Petra</h3>
+                <p>Petra Iordaniyada joylashgan arxeologik joy bo'lib, toshga o'yilgan arxitekturasi va suv o'tkazish tizimi bilan mashhur. <a href="petra.html"><mark>Hammasini ko'rish</mark></a></p>
+            </div>
+        </div>
+        <div class="wonder" id="wonder3">
+            <h2>Christ the Redeemer</h2>
+            <img src="https://th.bing.com/th/id/R.5151de74cddcad03a0dfa1312b89031f?rik=j7PxOuwm0n%2bR0g&riu=http%3a%2f%2f4. bp.blogspot.com%2f-yA1inFreZAQ%2fUei0hFMHFsI%2fAAAAAAAAHMY%2frTic90zSDmk%2fs1600%2fBrasilCorcovadoStatue.jpg&ehk=eGremLukFTrjxR2WU2JFnOAWAzOxHWuxmtFW8ri1tUY%3d&risl=&pid=ImgRaw&r=0" alt="Christ the Redeemer">
+            <div class="info">
+                <h3>Christ the Redeemer</h3>
+                <p>Rio-de-Janeyroda joylashgan ushbu mashhur haykal 30 metr balandlikda va shaharga nazar soladi.  <a href="christ.html"><mark>Hammasini Ko'rish</mark></a></p>
+            </div>
+        </div>
+        <div class="wonder" id="wonder4">
+            <h2>Machu Picchu</h2>
+            <img src="https://www.sostravel.com/wp-content/uploads/2019/10/machu-picchu-1-1-1024x584.jpg" alt="Machu Picchu">
+            <div class="info">
+                <h3>Machu Picchu</h3>
+                <p>Machu Picchu - Peruning And tog'larida joylashgan 15-asr Inka qasri.  <a href="achupichuu.html"><mark>Hammasini Ko'rish</mark></a></p>
+            </div>
+        </div>
+        <div class="wonder" id="wonder5">
+            <h2>Chichen Itza</h2>
+            <img src="https://th.bing.com/th/id/OIP.i3ab5CuDMPJVaFcBh55pHgHaE8?rs=1&pid=ImgDetMain" alt="Chichen Itza">
+            <div class="info">
+                <h3>Chichen Itza</h3>
+                <p>Chichen Itza - Meksikadagi Maya sivilizatsiyasi tomonidan qurilgan katta prekolumbiy arxeologik joy.  <a href="chichen.html"><mark>Hammasini Ko'rish</mark></a></p>
+            </div>
+        </div>
+        <div class="wonder" id="wonder6">
+            <h2>Roman Colosseum</h2>
+            <img src="https://www.mostamazingwonders.com/wp-content/uploads/2014/06/Roman-Colosseum1.jpg" alt="Roman Colosseum">
+            <div class="info">
+                <h3>Roman Colosseum</h3>
+                <p>Kolizey - Rimning markazida joylashgan qadimiy amfiteatr.  <a href="kolisey.html"><mark>Hammasini Ko'rish</mark></a></p>
+            </div>
+        </div>
+        <div class="wonder" id="wonder7">
+            <h2>Taj Mahal</h2>
+            <img src="https://th.bing.com/th/id/R.7680809ef4b82b0fcf4ac33809d4124a?rik=XJMRkwq2uksP0A&riu=http%3a%2f%2fblog.rayburntours.com%2fwp-content%2fuploads%2f2015%2f11%2fdreamstime_xxl_12811065.jpg&ehk=AKCK8uZh1TdEg3tfZL8bATevAuRV1SdPe2PC1vHu%2bIw%3d&risl=&pid=ImgRaw&r=0" alt="Taj Mahal">
+            <div class="info">
+                <h3>Taj Mahal</h3>
+                <p>Taj Mahal - Agra, Hindistonda joylashgan, Mumtaz Mahal xotirasiga qurilgan oq marmar maqbara.  <a href="tojimahal.html"><mark>Hammasini Ko'rish</mark></a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dunyoning 7 Mo'jizasi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
