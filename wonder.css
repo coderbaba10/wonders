@@ -1,89 +1,10 @@
 /* Umumiy stil */
 body {
-    margin: 5px;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333;
-    color: black;
     background-color: #f4f4f4;
+    color: black;
     transition: background-color 0.3s, color 0.3s;
-}
-.container{
-    margin: 5px;
-    background-color: #333(247, 193, 94);
-}
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.navbar {
-    width: 100%;
-    background-color: #222222;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-}
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-.dark-mode {
-    background-color: black; /* Qorong'ilik rejimi */
-    color: white; /* Qorong'ilik rejimi */
-}
-.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-.dark-mode header {
-    background: #1e1e1e;
-}
-button {
-    padding: 5%;
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: transparent; /* Tugma rangi */
-    color: white;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.navbar .links::ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 10px;
-     word-spacing: 5px;
-}
-
-.navbar .links ul li {
-    display: inline;
-    margin: 0 15px;
-}
-.navbar .links ul li a:hover {
-    color: #ffcc00; /* Hover holatidagi rang */
-    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Hover holatidagi soya */
-} 
-.navbar .links ul li a {
-    color: #fff;
-    text-decoration: none;
 }
 
 .container {
@@ -99,11 +20,72 @@ button {
     animation-delay: 0.2s; /* Animatsiya kechikishi */
 }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1; /* Ko'rinadigan holat */
-        transform: translateY(0); /* Yuqoriga ko'tarilgan holat */
-    }
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #222222;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+button {
+    padding: 5%;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #444; /* Tugma rangi */
+    color: white; /* Tugma matni rangi */
+    transition: background-color 0.3s; /* Tugma rangini o'zgartirish animatsiyasi */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .links ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 10px;
+    word-spacing: 5px;
+}
+
+.navbar .links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar .links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .links ul li a:hover {
+    color: #ffcc00; /* Hover holatidagi rang */
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Hover holatidagi soya */
 }
 
 .container h1 {
@@ -136,7 +118,6 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
-    width: 100%;
 }
 
 /* Media so'rovlar */
@@ -166,5 +147,12 @@ footer a {
 
     footer {
         font-size: 0.9em; /* Kichik ekranlarda footer matnini kichraytirish */
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Ko'rinadigan holat */
+        transform: translateY(0); /* Yuqoriga ko'tarilgan holat */
     }
 }
