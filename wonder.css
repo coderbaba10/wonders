@@ -74,8 +74,10 @@ button {
 }
 
 .navbar .links ul li {
-    display: inline;
+    display: ;
     margin: 0 15px;
+    justify-content: space-between;
+    word-spacing: 4px;
 }
 
 .navbar .links ul li a {
