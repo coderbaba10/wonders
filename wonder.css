@@ -70,6 +70,7 @@ button {
     justify-content: space-evenly;
     list-style-type: none;
     padding: 0;
+     word-spacing: 5px;
 }
 
 .navbar .links ul li {
