@@ -69,7 +69,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
      word-spacing: 5px;
 }
 
