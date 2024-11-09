@@ -52,7 +52,7 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #444; /* Tugma rangi */
+    background-color: transparent; /* Tugma rangi */
     color: white; /* Tugma matni rangi */
     transition: background-color 0.3s; /* Tugma rangini o'zgartirish animatsiyasi */
 }
@@ -84,7 +84,7 @@ button {
     color: #fff;
     text-decoration: none;
     word-spacing: 10px;
-    padding: 0 5px;
+     margin: 0 15px;
 }
 
 .navbar .links ul li a:hover {
