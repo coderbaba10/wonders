@@ -83,6 +83,7 @@ button {
 .navbar .links ul li a {
     color: #fff;
     text-decoration: none;
+    word-spacing: 10px;
 }
 
 .navbar .links ul li a:hover {
