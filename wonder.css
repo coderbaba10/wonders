@@ -65,7 +65,7 @@ button {
     height: 100%;
 }
 
-.navbar .links ul {
+.navbar .links::ul {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
