@@ -84,6 +84,7 @@ button {
     color: #fff;
     text-decoration: none;
     word-spacing: 10px;
+    padding: 0 5px;
 }
 
 .navbar .links ul li a:hover {
